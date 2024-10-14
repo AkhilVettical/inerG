@@ -1,0 +1,51 @@
+/* Styling the table container */
+.table-container {
+  height: 100vh; /* Adjust based on your needs */
+  width:60vw;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  margin-top: 20px;
+  width: 100%; /* Ensure the table spans the full width of the container */
+  border-radius: 18px;
+  min-width: max-content;
+}
+
+/* Styling for the table header */
+thead th {
+  position: sticky;
+  top: 0;
+  background-color: #376a61; /* Specific color for the first row */
+  color: white;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: bold;
+  z-index: 2; /* Ensure it stays on top of rows */
+  border-bottom: 1px solid #ddd; /* Add a border for better visibility */
+}
+
+/* Styling for table data cells */
+td {
+  padding: 10px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  z-index: 1; /* Lower z-index than the header */
+}
+
+/* Table row styling */
+tr {
+  transition: background-color 0.3s;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+tbody tr {
+  height: 50px;
+}

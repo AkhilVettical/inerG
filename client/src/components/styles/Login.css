@@ -1,0 +1,58 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0; /* Soft gradient background */
+}
+
+.login-form {
+    background-color: white; /* White background for form */
+    padding: 20px; /* Reduced padding for compactness */
+    border-radius: 10px; /* Slightly rounded corners */
+    width: 300px; /* Set a fixed width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.login-title {
+    font-size: 24px; /* Slightly larger font for title */
+    margin-bottom: 20px; /* Spacing below title */
+}
+
+.input-group {
+    margin-bottom: 15px; /* Spacing between input fields */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack label above input */
+}
+
+.input-group label {
+    font-weight: bold; /* Make labels bold */
+    margin-bottom: 5px; /* Spacing below label */
+}
+
+.input-group input {
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Add border to input fields */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+.submit-button {
+    background-color: #376a61; /* Match the button color */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer;
+    width: 100%; /* Full width */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.submit-button:hover {
+    background-color: #2b4e47; /* Darker shade on hover */
+}
+
+.signup-link {
+    display: block; /* Block display for full-width */
+    margin-top: 10px; /* Spacing above the link */
+    text-align: center; /* Center the link */
+}

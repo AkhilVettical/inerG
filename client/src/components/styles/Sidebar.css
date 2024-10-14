@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    background-color: var(--secondary-color);
+    padding: 20px 14px;
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    display: flex;
+    flex-direction: column; /* Ensure elements stack vertically */
+}
+
+.sidebar-body {
+    flex: 1; /* Takes up available space */
+}
+
+.sidebar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    padding-bottom: 4px;
+}
+
+.sidebar-brand { /* Fixed typo from 'siebar-brand' to 'sidebar-brand' */
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.sidebar-brand-text {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--logo-color);
+    margin-bottom: 8px;
+}
+
+.sidebar-close-btn {
+    width: 28px;
+    height: 28px;
+    box-shadow: 0px 0px 4px rgba(71, 91, 232, 0.04);
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.sidebar-menu,
+.sidebar-menu2 { /* Group sidebar menus */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.menu-list,
+.sidebar-menu2 ul { /* Ensure these are styled without bullets */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.menu-item {
+    margin-bottom: 8px; /* Spacing between menu items */
+}
+
+.menu-link {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 11px;
+    padding: 12px;
+    border-radius: 12px;
+    color: var(--side-text-color);
+    transition: var(--default-transition);
+    text-decoration: none; /* Remove underline from links */
+}
+
+.menu-link:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Optional: Add hover effect */
+}
+
+.sidebar-footer {
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.sidebar-footer ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Remove bullet points */
+}
+
+.menu-link.active {
+    background-color: #376a61; /* Highlight color for the active link */
+    color: white; /* Change text color for better contrast */
+    border-radius: 12px; /* Optional: Add border-radius for rounded corners */
+}

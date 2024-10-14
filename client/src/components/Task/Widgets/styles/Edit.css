@@ -1,0 +1,16 @@
+.edit {
+    background-color: transparent; /* No background color */
+    color: #376a61; /* Text color matching the theme */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Adjust font size as needed */
+    padding: 10px; /* Padding for better clickability */
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  /* Optional: Add hover effect */
+  .edit:hover {
+    color: #2b4e47; /* Darker shade for hover effect */
+    text-decoration: underline; /* Underline on hover for indication */
+  }
+  

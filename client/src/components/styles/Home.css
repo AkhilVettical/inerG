@@ -1,0 +1,46 @@
+.container{
+ display: flex;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .table-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+  }
+  
+  .btn-add {
+    display: flex; 
+    align-items: center; 
+    background-color: #376a61;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    height: fit-content;
+    margin-top: 20px; 
+  }
+  
+  .btn-add:hover {
+    background-color: #2b4e47;
+  }
+  
+  .btn-add svg { /* Optional: Adjust icon size if needed */
+    margin-right: 5px; /* Space between icon and text */
+  }
+  
